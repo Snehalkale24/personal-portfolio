@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Skills</title>
+  <link rel="stylesheet" href="index.css" />
+  <style>
+    img {
+      height: 20px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 40px;
+      background-color: #060230;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #333;
+      font-weight: bold;
+    }
+
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .container,
+    .container2 {
+      width: 600px;
+      padding: 40px;
+      margin: 20px;
+    }
+
+    .heading {
+      text-align: center;
+      text-decoration: underline;
+      margin-bottom: 30px;
+    }
+
+    .bar {
+      margin-bottom: 20px;
+      font-size: 23px;
+    }
+
+    .info {
+      font-size: 17px;
+      font-weight: 500;
+      animation: showText 0.5s 1s linear forwards;
+      opacity: 0;
+    }
+
+    .progress-line,
+    .progress-line-html,
+    .progress-line-css,
+    .progress-line-js,
+    .progress-line-sql,
+    .progress-line-java {
+      position: relative;
+      border-radius: 10px;
+      width: 100%;
+      height: 5px;
+      background-color: black;
+      animation: animate 1s cubic-bezier(1, 0, 0, 1) forwards;
+      transform: scaleX(0);
+      transform-origin: left;
+      margin-top: 5px;
+    }
+
+    .progress-line-html span {
+      display: block;
+      height: 100%;
+      background-color: orange;
+      width: 90%;
+    }
+
+    .progress-line-css span {
+      display: block;
+      height: 100%;
+      background-color: blue;
+      width: 80%;
+    }
+
+    .progress-line-js span {
+      display: block;
+      height: 100%;
+      background-color: gold;
+      width: 75%;
+    }
+
+    .progress-line-sql span {
+      display: block;
+      height: 100%;
+      background-color: green;
+      width: 85%;
+    }
+
+    .progress-line-java span {
+      display: block;
+      height: 100%;
+      background-color: red;
+      width: 70%;
+    }
+
+    .redial-bars {
+      text-align: center;
+      margin: 20px;
+    }
+
+    .percentage {
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    .text {
+      font-size: 16px;
+      color: #f5f2f2;
+    }
+
+    @keyframes animate {
+      to {
+        transform: scaleX(1);
+      }
+    }
+
+    @keyframes showText {
+      to {
+        opacity: 1;
+      }
+    }
+    .radial-bars {
+  width: 100%;
+  height: 170px;
+  margin-bottom: 10px;
+  position: relative;
+}
+.radial-bars svg {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-90deg);
+  width: 120px;
+  height: 160px;
+}
+.radial-bars .progress-bar {
+  stroke-width: 10;
+  stroke: #000;
+  stroke-dashoffset: 502;
+  stroke-dasharray: 502;
+  stroke-linecap: round;
+  animation: animate-bar 1s linear forwards;
+  fill: transparent;
+}
+.path {
+  stroke-width: 10;
+  stroke: aquamarine;
+  fill: transparent;
+  stroke-dasharray: 502;
+  stroke-dashoffset: 502;
+  stroke-linecap: round;
+}
+.path-1 {
+  animation: animate-path1 1s 1s linear forwards;
+}
+@keyframes animate-bar {
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes animate-path1 {
+  100% {
+    stroke-dashoffset: 100;
+  }
+}
+
+    </style>
+</head>
+
+<body>
+  <nav>
+    <div class="left">Snehal's Portfolio</div>
+    <ul>
+      <li><a href="../Pages/index.html">Home</a></li>
+      <li><a href="../Pages/About.html">About</a></li>
+      <li><a href="Skills.html">Services</a></li>
+      <li><a href="Contact.html">Contact Me</a></li>
+    </ul>
+  </nav>
+
+  <h1 style="text-align:center; margin-top: 20px;">Skills</h1>
+
+  <section>
+    <div class="container" id="skills">
+      <h2 class="heading">Technical Skills</h2>
+
+      <div class="bar">
+        <img src="../Images/html.png" alt="HTML" />
+        <div class="info"><span>HTML</span></div>
+        <div class="progress-line-html"><span></span></div>
+      </div>
+
+      <div class="bar">
+        <img src="../Images/css-3.png" alt="CSS" />
+        <div class="info"><span>CSS</span></div>
+        <div class="progress-line-css"><span></span></div>
+      </div>
+
+      <div class="bar">
+        <img src="../Images/js.png" alt="JavaScript" />
+        <div class="info"><span>JavaScript</span></div>
+        <div class="progress-line-js"><span></span></div>
+      </div>
+
+      <div class="bar">
+        <img src="../Images/database.png" alt="SQL" />
+        <div class="info"><span>SQL</span></div>
+        <div class="progress-line-sql"><span></span></div>
+      </div>
+
+      <div class="bar">
+        <img src="../Images/java.png" alt="Java" />
+        <div class="info"><span>Java</span></div>
+        <div class="progress-line-java"><span></span></div>
+      </div>
+    </div>
+
+    <div class="container2">
+      <h2 class="heading">Professional Skills</h2>
+
+      <div class="redial-bars">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="percentage">70%</div>
+        <div class="text">Communication</div>
+      </div>
+
+      <div class="redial-bars">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="percentage">90%</div>
+        <div class="text">Problem Solving</div>
+      </div>
+
+      <div class="redial-bars">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="percentage">85%</div>
+        <div class="text">Creativity</div>
+      </div>
+
+      <div class="redial-bars">
+        <svg viewBox="0 0 200 200">
+          <circle class="progress-bar" cx="100" cy="100" r="80"></circle>
+          <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+        </svg>
+        <div class="percentage">88%</div>
+        <div class="text">Teamwork</div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
