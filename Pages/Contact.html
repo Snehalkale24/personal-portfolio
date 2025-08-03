@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact Me</title>
   <link rel="stylesheet" href="index.css" />
   <style>
@@ -11,6 +12,7 @@
       background-color: #204781;
       margin: 0;
       padding: 0;
+
     }
 
     .container {
@@ -18,7 +20,7 @@
       margin: 60px auto;
       background-color: #fff;
       padding: 30px 40px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
       border-radius: 10px;
     }
 
@@ -35,7 +37,8 @@
       color: #444;
     }
 
-    input, textarea {
+    input,
+    textarea {
       width: 100%;
       padding: 10px;
       margin-top: 6px;
@@ -81,8 +84,9 @@
     }
   </style>
 </head>
+
 <body>
-    <nav>
+  <nav>
     <div class="left">Snehal's Portfolio</div>
     <ul>
       <li><a href="../Pages/index.html">Home</a></li>
@@ -117,7 +121,7 @@
     const form = document.getElementById('contactForm');
     const successMsg = document.getElementById('successMsg');
 
-    form.addEventListener('submit', function(e) {
+    form.addEventListener('submit', function (e) {
       e.preventDefault();
 
       successMsg.style.display = 'block';
@@ -131,4 +135,5 @@
   </script>
 
 </body>
+
 </html>
