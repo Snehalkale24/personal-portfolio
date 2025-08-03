@@ -34,5 +34,13 @@ This is a responsive personal portfolio website built using **HTML**, **CSS**, a
 ---
 
 ## 📁 Folder Structure
+portfolio/
+├── index.html
+├── about.html
+├── style.css
+├── script.js
+├── images/
+│ └── (project and profile images)
+└── README.md
 
 
